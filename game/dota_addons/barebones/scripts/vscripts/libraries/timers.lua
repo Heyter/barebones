@@ -200,6 +200,10 @@ function Timers:CreateTimer(name, args, context)
     args = {endTime = name, callback = args}
     name = DoUniqueString("timer")
   end
+  if not args then 
+	error("Timer function is nil")
+	return
+  end
   if not args.callback then
     print("Invalid timer created: "..name)
     return

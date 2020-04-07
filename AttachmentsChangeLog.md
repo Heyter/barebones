@@ -8,6 +8,7 @@
 
 ### Version 0.85
 - Added the ability to attach multiple particles to a given prop.
+- Added option to control angles and offsets using the mouse.
 
 ### Version 0.84
 - Added handling of Particle attachments to props via the attachments.txt database.

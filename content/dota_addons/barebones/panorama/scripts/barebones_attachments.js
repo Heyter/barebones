@@ -447,7 +447,8 @@ function HandleMouseEvent(eventName, arg)
     var label = $.CreatePanel('Label', dropdown, 'mDD' + i);
     label.text = Math.ceil(options[i] * 100) / 100;
     dropdown.AddOption(label); 
-  } 
+  }
+  GameUI.SetMouseCallback(HandleMouseEvent);
 
   dropdown.SetSelected("mDD3");
 
